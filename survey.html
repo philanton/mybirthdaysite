@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey. My Birthday Party</title>
+    <link rel="stylesheet" href="dist/css/tailwind.css">
+</head>
+<body>
+    <header>
+        <img src="img/ducky_logo.png" alt="" class="icon-m">
+        <h1>My birthday party</h1>
+        <img src="img/menu.png" alt="" class="icon-s">
+    </header>
+    <div class="desert desert-up">
+        <div class="content">
+            <h2 id="title">Survey</h2>
+            <div class="chunk" id="description">
+                <p class="paragraph">
+                    If you are here then you said “Yes” 
+                    and then I want you to take survey below, 
+                    so that your time won’t be wasted!
+                </p>
+                <p class="paragraph">
+                    Sometimes there are some optional input fields, but not this time.
+                </p>
+                <em class="emph">
+                    Please fill in all input fields.
+                </em>
+            </div>
+            <form action="" id="survey-form">
+                <div class="chunk">
+                    <label class="lbl" for="name" id="name-label">Your name:</label>
+                    <input type="text" id="name" name="name" placeholder="Anton">
+                </div>
+                <div class="chunk">
+                    <label class="lbl" for="email" id="email-label">Your email:</label>
+                    <input type="email" id="email" name="email" placeholder="myname@example.com">
+                </div>
+                <div class="chunk">
+                    <label class="lbl" for="age" id="number-label">Your age:</label>
+                    <input type="number" id="number" name="age" min="18" max="30" placeholder="18 - 30">
+                </div>
+                <div class="chunk">
+                    <label class="lbl" for="">Are you a drinker?</label>
+                    <div class="flex flex-wrap">
+                        <div>
+                            <input type="radio" id="alco" name="alco" value="yes">
+                            <label for="alco">Yes</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="nalco" name="alco" value="no">
+                            <label for="nalco">No</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="chunk">
+                    <label class="lbl" for="">What do you like to drink?</label>
+                    <div class="flex flex-wrap">
+                        <div>
+                            <input type="checkbox" id="beer" name="beer" value="beer">
+                            <label for="beer">Beer</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="vodka" name="vodka" value="vodka">
+                            <label for="vodka">Vodka</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="whiskie" name="whiskie" value="whiskie">
+                            <label for="whiskie">Whiskie</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="wine" name="wine" value="wine">
+                            <label for="wine">Wine</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="gin" name="gin" value="gin">
+                            <label for="gin">Gin</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="chunk">
+                    <label class="lbl" for="live">Where do you currently live?</label>
+                    <select name="live" id="dropdown" value="0">
+                        <option value="0">Outskirts</option>
+                        <option value="1">Center</option>
+                        <option value="2">Left bank</option>
+                        <option value="3">Right bank</option>
+                    </select>
+                </div>
+                <div class="chunk">
+                    <label class="lbl" for="wishes">Do you have any additional wishes?</label>
+                    <textarea name="wishes" id="wishes" placeholder="Type something..."></textarea>
+                </div>
+                <div class="chunk">
+                    <a href="survey_home.html" class="btn btn-pr float-right">
+                        <button type="submit">Submit</button>
+                    </a>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
